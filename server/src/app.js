@@ -5,8 +5,8 @@ import helmet from "helmet";
 import hpp from "hpp";
 import rateLimit from "express-rate-limit";
 import cookieParser from "cookie-parser";
-import { MAX_JSON_SIZE, REQUEST_LIMIT_NUMBER, REQUEST_LIMIT_TIME, URL_ENCODED, WEB_CACHE } from "./config/config";
-import router from "./routes/api";
+import { MAX_JSON_SIZE, REQUEST_LIMIT_NUMBER, REQUEST_LIMIT_TIME, URL_ENCODED, WEB_CACHE } from "./config/config.js";
+import router from "./routes/api.js";
 
 export const app = express();
 
