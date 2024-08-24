@@ -1,4 +1,7 @@
-export const PORT = process.env.PORT || 3000; // Provide a default port value
+import dotenv from "dotenv";
+dotenv.config();
+
+export const PORT = process.env.PORT || 5500; // Provide a default port value
 export const MAX_JSON_SIZE = "50mb";
 export const URL_ENCODED = true;
 export const REQUEST_LIMIT_TIME = 15 * 60 * 1000; // 15 minutes in milliseconds
